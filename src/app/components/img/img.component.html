@@ -1,8 +1,5 @@
-<div class="fixed-size-container">
-  <img (load)="imgLoaded()" (error)="imgError()" [src]="img" *ngIf="img; else elseImage">
-</div>
+<img (load)="imgLoaded()" (error)="imgError()" [src]="img" *ngIf="img; else elseImage">
 <ng-template #elseImage>
-  <div class="fixed-size-container">
-    <img [src]="imageDefault">
-  </div>
+  <img [src]="imageDefault">
 </ng-template>
+
